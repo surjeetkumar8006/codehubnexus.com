@@ -1,0 +1,142 @@
+/* ================= HEADER STYLES ================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo Styles */
+.logo__Container img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.navItems ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems ul li >a {
+  display: space;
+  margin-right:100px;
+  font-size:18px;
+  text-decoration:none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  color: #ff8c00;
+  border-bottom: 3px solid #ff8c00;
+}
+
+/* Cart & Search Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons i {
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-icons i:hover {
+  color: #ff8c00;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .navItems ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo__Container img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.navItems ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navItems li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navItems li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.navItems li a:hover {
+  color: #6a11cb;
+}
+
+/* Active Page Style */
+.navItems li .active {
+  color: white !important;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* 🔥 Special Style for Login Button */
+.navItems li .login-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navItems li .login-btn:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  box-shadow: 0 3px 8px rgba(255, 75, 43, 0.4);
+}

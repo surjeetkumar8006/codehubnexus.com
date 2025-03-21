@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Full Stack Development",
+      "description": "Master MERN: MongoDB, Express.js, React, Node.js. Hands-on projects, expert guidance.",
+      "image": "/images/fullstack.jfif",
+      "level": "Professional",
+      "btnText": "Explore Full Stack",
+      "link": "/courses/fullstack"
+    },
+    {
+      "id": 2,
+      "title": "Data Analytics",
+      "description": "Master Data Analytics: Hands-on projects, expert guidance, and real-world insights.",
+      "image": "/images/dataana.jfif",
+      "level": "Professional",
+      "btnText": "Explore Data Analytics",
+      "link": "/courses/data-analytics"
+    },
+    {
+      "id": 3,
+      "title": "Web Development Bootcamp",
+      "description": "Join our Web Development Bootcamp: master HTML, CSS, and JavaScript.",
+      "image": "/images/fullstack.jfif",
+      "level": "Student",
+      "btnText":      "Explore Web Dev",
+      "link": "/courses/web-development"
+    },
+    {
+      "id": 4,
+      "title": "Frontend Development",
+      "description": "Learn React with practical projects and expert instruction.",
+      "image": "/images/frent.jfif",
+      "level": "Professional",
+      "btnText": "Explore React",
+      "link": "/courses/frontend"
+    },
+    {
+      "id": 5,
+      "title": "Java Full Stack Development",
+      "description": "Learn Java Full Stack Development with Spring Boot and React.",
+      "image": "/images/java.jfif",
+      "level": "Professional",
+      "btnText": "Explore Java Full",
+      "link": "/courses/java-full-stack"
+    },
+    {
+      "id": 6,
+      "title": "Backend Development",
+      "description": "Learn Node.js, Express.js, and MongoDB with hands-on projects.",
+      "image": "/images/backand.jfif",
+      "level": "Professional",
+      "btnText": "Explore Backend",
+      "link": "/courses/backend"
+    }
+  ]
+  
