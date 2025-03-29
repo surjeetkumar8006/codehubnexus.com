@@ -1,0 +1,378 @@
+/* Global Styles */
+.course-page {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  padding: 20px;
+  margin-top:-90px;
+  background: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #3f51b5, #283593);
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 3.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.4em;
+  color: #e0e0e0;
+}
+
+.course-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.course-info-item {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.course-info-item:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Main Content Area */
+.course-content {
+  background-color: white;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+  color: #3f51b5;
+  border-bottom: 4px solid #3f51b5;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+/* List Styles */
+.tight-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tight-list li {
+  margin-bottom: 12px;
+  font-size: 1.15em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mentor Section */
+.mentor-section {
+  background-color: #f0f8ff;
+  padding: 30px; /* Reduced padding */
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards */
+  gap: 20px; /* Reduced gap */
+}
+
+.mentor-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-8px);
+}
+
+.mentor-image {
+  width: 100%;
+  height: 150px; /* Smaller images */
+  object-fit: cover;
+}
+
+.mentor-name {
+  text-align: center;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  font-size: 1.1em; /* Smaller font */
+}
+
+.mentor-description {
+  text-align: center;
+  color: #666;
+  padding: 0 15px 15px; /* Reduced padding */
+  font-size: 0.9em; /* Smaller font */
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+  background-color: #e8f5e9;
+  padding: 30px; /* Reduced padding */
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tech-stack-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap */
+}
+
+.tech-icon {
+  width: 50px; /* Smaller icons */
+  height: 50px; /* Smaller icons */
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Project Showcase Section */
+.project-showcase-section {
+  background-color: #fff3e0;
+  padding: 30px; /* Reduced padding */
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller cards */
+  gap: 20px; /* Reduced gap */
+}
+
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px; /* Smaller images */
+  object-fit: cover;
+}
+
+.project-title {
+  text-align: center;
+  margin: 12px 0 8px;
+  font-weight: 600;
+  font-size: 1.2em; /* Smaller font */
+}
+
+.project-description {
+  text-align: center;
+  color: #666;
+  padding: 0 15px 15px; /* Reduced padding */
+  font-size: 1em; /* Smaller font */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #ede7f6;
+  padding: 30px; /* Reduced padding */
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller cards */
+  gap: 20px; /* Reduced gap */
+}
+
+.testimonial-card {
+  border-radius: 12px;
+  padding: 25px; /* Reduced padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.testimonial-quote {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.1em; /* Smaller font */
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-image {
+  width: 50px; /* Smaller images */
+  height: 50px; /* Smaller images */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px; /* Reduced margin */
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 1.1em; /* Smaller font */
+}
+/* Career Opportunities Section Styling */
+.career-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.career-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tight-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.career-item {
+  background: #fff;
+  padding: 15px;
+  width: calc(50% - 10px);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.career-item:hover {
+  transform: scale(1.05);
+}
+
+.career-item strong {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .career-section {
+    padding: 20px;
+  }
+
+  .career-heading {
+    font-size: 1.8rem;
+  }
+
+  .career-item {
+    width: 100%;
+  }
+}
+
+
+/* Career Opportunities & Course Highlights Section Styling */
+
+.career-heading, .course-highlights h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.career-section, .course-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tight-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.career-item, .highlight-item {
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.career-item:hover, .highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+.career-item strong {
+  color: #007bff;
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .career-section, .course-highlights {
+    padding: 20px;
+  }
+
+  .career-heading, .course-highlights h2 {
+    font-size: 1.8rem;
+  }
+
+  .career-item, .highlight-item {
+    max-width: 100%;
+  }
+}
