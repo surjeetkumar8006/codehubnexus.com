@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/Home.css";
-import CoursesSection from "./CoursesSection"; // Import the Courses Section component
+import CoursesSection from "./CoursesSection";
+
+const Popup = ({ message, onClose }) => {
+  return (
+    <div className="popup-overlay" onClick={onClose}>
+      <div className="popup-box" onClick={(e) => e.stopPropagation()}>
+        <h2>{message}</h2>
+        <button className="btn-close" onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePopup = () => {
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 3000); // Auto-close after 3s
+  };
+
   return (
     <div>
-      {/* Hero Section */}
+      {showPopup && <Popup message="Welcome to Codehub Nexus!" onClose={() => setShowPopup(false)} />}
+
       <section className="hero">
         <div className="hero-content">
           <h1>Empowering Your Tech Future</h1>
           <p>Learn from industry experts & build real-world projects with us.</p>
-          <button className="btn-primary">Get Started</button>
+          <button className="btn-primary" onClick={handlePopup}>Get Started</button>
         </div>
       </section>
-
+      
       <section className="why-us">
         <h2>Why Choose Codehub Nexus?</h2>
         <div className="features">
@@ -34,21 +53,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
       <section className="courses">
         <CoursesSection />
       </section>
-      <section className="testimonials">
-        <h2>What Our Students Say</h2>
-        <div className="testimonial-card">
-          <p>"Codehub Nexus transformed my career! The projects helped me get a job in an MNC."</p>
-          <h4>- Aman Gupta</h4>
-        </div>
-      </section>
-
-      {/* Call to Action */}
+      
       <section className="cta">
         <h2>Start Your IT Journey Today!</h2>
-        <button className="btn-primary">Apply Now</button>
+        <button className="btn-primary" onClick={handlePopup}>Apply Now</button>
       </section>
     </div>
   );
